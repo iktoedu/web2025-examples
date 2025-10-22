@@ -9,6 +9,3 @@ def form():
         tpl_data['username'] = request.form['username']
         tpl_data['email'] = request.form['email']
     return render_template('form.html.j2', **tpl_data)
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
